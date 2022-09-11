@@ -1,2 +1,4 @@
-# navigate-hotel
-Design Responsivo usando a técnica do Flex Box
+# Navigate Hotel
+Design Responsivo usando a técnica do Flex Box de estrutura de página web
+
+

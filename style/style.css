@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@500;600;700&family=Roboto:wght@100;400&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+
+/* reseting page properties */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-weight: 300;
+  font-size: 100%;
+
+  /* used variables in the code */
+  --lato: "Lato";
+  --poppins: "Poppins";
+  --roboto: "Roboto";
+
+  --sm: 300;
+  --md: 500;
+  --lg: 700;
+}
+
+nav,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+a:hover {
+  opacity: 1;
+}
+/* Initial reset */
+
+/* header style */
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+header img {
+  width: 200px;
+}
+header nav {
+  display: flex;
+  gap: 10px;
+}
+header li a {
+  color: #191c03;
+}
+@media screen and (max-width: 650px) {
+  header {
+    flex-direction: column;
+  }
+  header img {
+    margin-bottom: 10px;
+  }
+}

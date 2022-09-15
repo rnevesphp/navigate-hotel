@@ -42,6 +42,7 @@ header {
   top: 0;
   left: 0;
   display: flex;
+  background-color: #fff;
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
@@ -55,12 +56,149 @@ header nav {
 }
 header li a {
   color: #191c03;
+  font-family: var(--lato);
+  font-weight: 700;
 }
-@media screen and (max-width: 650px) {
+
+/* HERO */
+.hero {
+  background-image: url(../assets/hero.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  margin: 0 0 15px 0;
+  font-family: var(--poppins);
+  font-weight: var(--lg);
+}
+.hero h3 {
+  font-family: var(--roboto);
+  font-size: 1.8rem;
+  font-weight: var(--sm);
+  margin: 0 0 20px 0;
+}
+
+.hero .btn {
+  background-color: #fff;
+  padding: 15px 40px;
+  border-radius: 4px;
+  color: #191c03;
+  font-family: var(--lato);
+  font-weight: var(--md);
+}
+/* HERO */
+
+/* section hotel */
+.hotel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 100px 50px;
+}
+
+.hotel h1 {
+  font-size: 2rem;
+  margin-bottom: 35px;
+  color: #191c03;
+  font-family: var(--poppins);
+  font-weight: var(--lg);
+}
+
+.hotel p {
+  max-width: 800px;
+  margin-bottom: 35px;
+  color: #191c03;
+  font-family: var(--roboto);
+  font-weight: var(--md);
+}
+
+.hotel hr {
+  width: 200px;
+  height: 2px;
+  background-color: #191c03;
+  margin-bottom: 70px;
+}
+
+.hotel .grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hotel .grid li {
+  height: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+}
+
+.hotel .grid li.sm {
+  flex-basis: 40%;
+}
+.hotel .grid li.lg {
+  flex-basis: 60%;
+}
+
+/* section hotel */
+
+/* media queries */
+/* tablet and similar devices and up */
+@media screen and (max-width: 620px) {
   header {
     flex-direction: column;
+    padding: 10px 25px;
+  }
+  header nav {
+    justify-content: space-evenly;
   }
   header img {
     margin-bottom: 10px;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+    padding: 10px 10px 5px 10px;
+  }
+  .hero h3 {
+    font-size: 1.2rem;
+    font-weight: var(--md);
+  }
+  .hotel .grid li.sm,
+  .hotel .grid li.lg {
+    flex-basis: 100%;
+  }
+}
+
+/* smartphones and large devices and up */
+@media screen and (max-width: 425px) {
+  header {
+    padding: 10px 0 20px 0;
+  }
+  header nav {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .hero h1 {
+    font-size: 1.6rem;
+    padding: 0 15px 0 15px;
+  }
+  .hero h3 {
+    font-size: 1.2rem;
+    padding: 0 15px 0 15px;
+    font-weight: var(--md);
+  }
+  .hotel .grid li.sm,
+  .hotel .grid li.lg {
+    flex-basis: 100%;
   }
 }

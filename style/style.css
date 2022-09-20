@@ -20,7 +20,6 @@
   --md: 500;
   --lg: 700;
 }
-
 nav,
 ul {
   list-style: none;
@@ -84,7 +83,6 @@ header li a {
   font-weight: var(--sm);
   margin: 0 0 20px 0;
 }
-
 .hero .btn {
   background-color: #fff;
   padding: 15px 40px;
@@ -102,9 +100,8 @@ header li a {
   align-items: center;
   text-align: center;
   justify-content: center;
-  padding: 100px 50px;
+  padding: 75px 50px 15px 50px;
 }
-
 .hotel h1 {
   font-size: 2rem;
   margin-bottom: 35px;
@@ -112,28 +109,23 @@ header li a {
   font-family: var(--poppins);
   font-weight: var(--lg);
 }
-
 .hotel p {
-  max-width: 800px;
   margin-bottom: 35px;
   color: #191c03;
   font-family: var(--roboto);
   font-weight: var(--md);
 }
-
 .hotel hr {
   width: 200px;
   height: 2px;
   background-color: #191c03;
   margin-bottom: 70px;
 }
-
 .hotel .grid {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-
 .hotel .grid li {
   height: 350px;
   padding: 20px;
@@ -142,16 +134,185 @@ header li a {
   background-size: cover;
   background-position: center;
 }
-
 .hotel .grid li.sm {
   flex-basis: 40%;
 }
 .hotel .grid li.lg {
   flex-basis: 60%;
 }
-
 /* section hotel */
 
+/* section caracteristicas */
+.caracteristicas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 50px;
+  background-color: #191c03;
+  color: #c3c63b;
+}
+.caracteristicas h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: var(--poppins);
+  font-weight: var(--lg);
+}
+.caracteristicas p {
+  margin-bottom: 20px;
+  font-family: var(--roboto);
+  font-weight: var(--md);
+}
+.caracteristicas hr {
+  width: 80%;
+  height: 2px;
+  background-color: #c3c63b;
+  margin-bottom: 50px;
+}
+.caracteristicas .grid {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.caracteristicas .grid li {
+  /* padding: 0 30px; */
+  text-align: center;
+}
+.caracteristicas .grid li i {
+  color: #c3c63b;
+  font-size: 3.5rem;
+  margin: 0 0 20px 0;
+}
+.caracteristicas .grid li h4 {
+  font-family: var(--poppins);
+  font-size: 1.5rem;
+  margin: 0 0 20px 0;
+  font-weight: var(--lg);
+}
+.caracteristicas .grid li p {
+  font-family: var(--lato);
+}
+/* section caracteristicas */
+
+/* Newsletter */
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+  text-align: center;
+}
+.newsletter h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #191c03;
+  font-family: var(--poppins);
+  font-weight: var(--lg);
+}
+.newsletter p {
+  margin-bottom: 15px;
+  color: #191c03;
+  font-family: var(--roboto);
+  font-weight: var(--md);
+}
+.newsletter form {
+  width: 80%;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.newsletter form input {
+  padding: 14px;
+  border: 1px solid #191c03;
+  border-radius: 5px;
+  margin: 0 5px 0 0;
+  flex: 1;
+}
+.newsletter form button {
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 2s all;
+  background-color: #191c03;
+  color: #c3c63b;
+}
+.newsletter form button:hover {
+  transition: 2s all;
+  background-color: #c3c63b;
+  color: #fff;
+}
+/* Newsletter */
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #191c03;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  color: #fff;
+}
+footer ul {
+  margin-bottom: 25px;
+  display: flex;
+}
+footer ul li {
+  width: 100%;
+  margin: 0 10px 0 0;
+}
+footer ul li:last-child {
+  margin: 0 0 0 0;
+}
+footer ul li a {
+  color: #c3c63b;
+  font-size: 1.8rem;
+}
+footer p {
+  width: 100%;
+  text-align: center;
+  font-weight: var(--md);
+  font-family: var(--roboto);
+}
+/* footer */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 /* media queries */
 /* tablet and similar devices and up */
 @media screen and (max-width: 620px) {
@@ -177,6 +338,13 @@ header li a {
   .hotel .grid li.lg {
     flex-basis: 100%;
   }
+
+  .caracteristicas .grid li i {
+    font-size: 1.8rem;
+  }
+  .caracteristicas .grid li h4 {
+    font-size: 1.2rem;
+  }
 }
 
 /* smartphones and large devices and up */
@@ -200,5 +368,20 @@ header li a {
   .hotel .grid li.sm,
   .hotel .grid li.lg {
     flex-basis: 100%;
+  }
+  .caracteristicas h1 {
+    font-size: 1.5rem;
+  }
+  .caracteristicas .grid {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .caracteristicas .grid li i {
+    color: #c3c63b;
+    font-size: 2rem;
+    margin: 0 0 20px 0;
+  }
+  .newsletter form button {
+    margin: 10px 0 0 0;
   }
 }

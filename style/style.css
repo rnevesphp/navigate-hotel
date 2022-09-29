@@ -93,7 +93,7 @@ header li a {
 }
 /* HERO */
 
-/* section hotel */
+/* hotel */
 .hotel {
   display: flex;
   flex-direction: column;
@@ -140,9 +140,9 @@ header li a {
 .hotel .grid li.lg {
   flex-basis: 60%;
 }
-/* section hotel */
+/* hotel */
 
-/* section caracteristicas */
+/* caracteristicas */
 .caracteristicas {
   display: flex;
   flex-direction: column;
@@ -176,12 +176,12 @@ header li a {
   justify-content: space-between;
 }
 .caracteristicas .grid li {
-  /* padding: 0 30px; */
+  padding: 0;
   text-align: center;
 }
 .caracteristicas .grid li i {
   color: #c3c63b;
-  font-size: 3.5rem;
+  font-size: 2.6rem;
   margin: 0 0 20px 0;
 }
 .caracteristicas .grid li h4 {
@@ -193,7 +193,7 @@ header li a {
 .caracteristicas .grid li p {
   font-family: var(--lato);
 }
-/* section caracteristicas */
+/* caracteristicas */
 
 /* Newsletter */
 .newsletter {
@@ -225,7 +225,6 @@ header li a {
   flex-wrap: wrap;
   margin-top: 15px;
 }
-
 .newsletter form input {
   padding: 14px;
   border: 1px solid #191c03;
@@ -279,40 +278,8 @@ footer p {
   font-weight: var(--md);
   font-family: var(--roboto);
 }
-/* footer */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
+/* footer * /
+
 /* media queries */
 /* tablet and similar devices and up */
 @media screen and (max-width: 620px) {
@@ -338,7 +305,10 @@ footer p {
   .hotel .grid li.lg {
     flex-basis: 100%;
   }
-
+  .caracteristicas .grid {
+    width: 100%;
+    justify-content: space-between;
+  }
   .caracteristicas .grid li i {
     font-size: 1.8rem;
   }
@@ -383,5 +353,8 @@ footer p {
   }
   .newsletter form button {
     margin: 10px 0 0 0;
+  }
+  footer p { 
+    width: 65%;
   }
 }

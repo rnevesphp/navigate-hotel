@@ -149,7 +149,7 @@ header li a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 100px 50px;
+  padding: 50px 25px;
   background-color: #191c03;
   color: #c3c63b;
 }
@@ -171,7 +171,7 @@ header li a {
   margin-bottom: 50px;
 }
 .caracteristicas .grid {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
 }
@@ -181,7 +181,7 @@ header li a {
 }
 .caracteristicas .grid li i {
   color: #c3c63b;
-  font-size: 2.6rem;
+  font-size: 2rem;
   margin: 0 0 20px 0;
 }
 .caracteristicas .grid li h4 {
@@ -281,7 +281,7 @@ footer p {
 /* footer * /
 
 /* media queries */
-/* tablet and similar devices and up */
+/* tablet and similar devices */
 @media screen and (max-width: 620px) {
   header {
     flex-direction: column;
